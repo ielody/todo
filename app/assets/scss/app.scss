@@ -1,57 +1,5 @@
 @import 'vcss.scss';
 
-// main {
-//   padding: 2rem 0;
-//   max-width: 600px;
-// }
-
-// form button ~ a,
-// nav a {
-//   margin-left: 0.5rem;
-// }
-
-// body > header {
-//   text-align: center;
-//   padding: 1rem 0;
-//   margin: 0;
-//   nav a {
-//     margin: 0 0.5rem;
-//   }
-// }
-
-// a.active {
-//   text-decoration: underline;
-// }
-
-// #flash {
-//   text-align: center;
-//   padding: 0.5rem;
-//   background: $highlight;
-//   position: fixed;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   &:first-letter {
-//     text-transform: uppercase;
-//   }
-//   &:empty {
-//     display: none;
-//   }
-// }
-
-// .flex {
-//   display: flex;
-//   align-items: baseline;
-//   :first-child {
-//     flex-grow: 1;
-//   }
-// }
-
-// .list {
-//   border-bottom: 1px solid $light;
-//   padding: 1rem 0;
-// }
-
 
 *,
 *:before,
@@ -62,9 +10,17 @@
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   background: lightblue;
+  text-align: center;
+
 }
+
+h2 {
+color: purple;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 
 .container {
   width: 40%;
@@ -80,19 +36,19 @@ body {
 
 #newtask {
   position: relative;
-  padding: 30px 20px 10px 10px;
+  padding: 30px 20px;
 }
 
 #newtask input {
-  width: 100%;
+  width: 75%;
   height: 45px;
   padding: 12px;
   background-color: lightyellow;
   color: black;
   position: relative;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
-  border: 5px solid cadetblue
+  border: 5px solid cadetblue;
+  font-family: cursive;
 }
 
 #newtask input:focus {
@@ -103,9 +59,8 @@ body {
 #newtask button {
   position: relative;
   float: right;
-  font-weight: 500;
   font-size: 16px;
-  background-color: crimson;
+  background-color: blue;
   color: aqua;
   border: none;
   cursor: pointer;
@@ -113,6 +68,36 @@ body {
   width:  20%;
   height: 45px;
   border-radius: 5px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
+#tasks {
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  background-color: lavender;
+  padding: 30px 20px;
+  margin-top: 10px;
+}
+
+.task {
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightblue;
+  cursor: pointer;
+}
+
+.task span {
+  font-size: 18px;
+}
+
+.task button {
+  background-color: #0f2223;
+  color: #fffff1;
+  cursor: pointer;
+  outline: none;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+}
